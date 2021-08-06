@@ -1,0 +1,482 @@
+html,body{
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.up-b{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color:white;
+    border-bottom: black 5px solid;
+    align-items: center;
+    position: sticky;
+}
+.al{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+.l-b{
+    width: 10%;
+    height: 500px;
+}
+.center-b{
+    width: 80%;
+    height: 1000px;
+}
+.r-b{
+    width: 10%;
+    height: 500px;
+}
+p{
+    margin: 0;
+}
+
+.clearfix {
+    clear: both;
+}
+#page {
+    display: flex;
+    width: auto;
+    position: fixed;
+    bottom:0;
+    right: 0;
+    z-index: 100;
+}
+#container {
+    opacity: .9;
+}
+
+
+/*==============================================================================
+    FLIP CLOCK
+==============================================================================*/
+.flipclock hr {
+    position: absolute;
+    left: 0;
+    top: 65px;
+    width: 100%;
+    height: 3px;
+    border: 0;
+    background: #000;
+    z-index: 10;
+    opacity: 0;
+}
+ul.flip {
+    position: relative;
+    float: left;
+    margin: 10px;
+    padding: 0;
+    width: 100px;
+    height: 60px;
+    font-size: 80px;
+    font-weight: bold;
+    line-height: 60px;
+}
+
+ul.flip li {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 49%;
+    height: 100%;
+    -webkit-perspective: 200px;
+    list-style: none;
+}
+
+ul.flip li.d1 {
+    float: right;
+}
+
+ul.flip li section {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+ul.flip li section:first-child {
+    z-index: 2;
+}
+
+ul.flip li div {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 49%;
+    overflow: hidden;
+}
+
+ul.flip li div .shadow {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+ul.flip li div.up {
+    -webkit-transform-origin: 50% 100%;
+    top: 0;
+}
+
+ul.flip li div.down {
+    -webkit-transform-origin: 50% 0%;
+    bottom: 0;
+}
+
+ul.flip li div div.inn {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 200%;
+    color: #fff;
+    text-shadow: 0 0 2px #fff;
+    text-align: center;
+    background-color: #000;
+    border-radius: 6px;
+}
+
+ul.flip li div.up div.inn {
+    top: 0;
+
+}
+
+ul.flip li div.down div.inn {
+    bottom: 0;
+}
+
+/*--------------------------------------
+ PLAY
+--------------------------------------*/
+
+body.play ul section.ready {
+    z-index: 3;
+}
+
+body.play ul section.active {
+    -webkit-animation: index .5s .5s linear both;
+    z-index: 2;
+}
+
+@-webkit-keyframes index {
+    0% {
+        z-index: 2;
+    }
+    5% {
+        z-index: 4;
+    }
+    100% {
+        z-index: 4;
+    }
+}
+
+body.play ul section.active .down {
+    z-index: 2;
+    -webkit-animation: flipdown .5s .5s linear both;
+}
+
+@-webkit-keyframes flipdown {
+    0% {
+        -webkit-transform: rotateX(90deg);
+    }  
+    80% {
+        -webkit-transform: rotateX(5deg);
+    } 
+    90% {
+        -webkit-transform: rotateX(15deg);
+    }
+    100% {
+        -webkit-transform: rotateX(0deg);
+    }
+}
+
+body.play ul section.ready .up {
+    z-index: 2;
+    -webkit-animation: flipup .5s linear both;
+}
+
+@-webkit-keyframes flipup {
+    0% {
+        -webkit-transform: rotateX(0deg);
+    }  
+    90% {
+        -webkit-transform: rotateX(0deg);
+    }
+    100% {
+        -webkit-transform: rotateX(-90deg);
+    }
+}
+
+/*--------------------------------------
+ SHADOW
+--------------------------------------*/
+
+body.play ul section.ready .up .shadow {
+   
+    background: linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+    -webkit-animation: show .5s linear both;
+}
+
+body.play ul section.active .up .shadow {
+   
+    background: linear-gradient(top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, 1) 100%);
+    -webkit-animation: hide .5s .3s linear both;
+}
+
+/*DOWN*/
+
+body.play ul section.ready .down .shadow {
+    
+    background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+    -webkit-animation: show .5s linear both;
+}
+
+body.play ul section.active .down .shadow {
+    
+    background: linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, .1) 100%);
+    -webkit-animation: hide .5s .3s linear both;
+}
+
+@-webkit-keyframes show {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: .10;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes hide {
+    0% {
+        opacity: 1;
+    }  
+    80% {
+        opacity: .20;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.in-1{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    
+}
+.slk{
+    flex-grow: 2;
+    height: 100%;
+}
+.s-list{
+    flex-grow: 1;
+    height: 100%;
+
+    max-width: 300px;
+}
+.slider {
+    margin: 0 auto;
+    max-width: 940px;
+  }
+  
+  .slide_viewer {
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide_group {
+    height: 100%;
+    position: relative;
+    width: 100%;
+  }
+  
+  .slide {
+    display: none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .slide:first-child {
+    display: block;
+  }
+  
+  .slide:nth-of-type(1) {
+    background: #D7A151;
+  }
+  
+  .slide:nth-of-type(2) {
+    background: #F4E4CD;
+  }
+  
+  .slide:nth-of-type(3) {
+    background: #C75534;
+  }
+  
+  .slide:nth-of-type(4) {
+    background: #D1D1D4;
+  }
+  
+  .slide_buttons {
+    left: 0;
+
+    right: 0;
+    text-align: center;
+  }
+  
+  a.slide_btn {
+    color: #474544;
+    font-size: 42px;
+    margin: 0 0.175em;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  .slide_btn.active, .slide_btn:hover {
+    color: #428CC6;
+    cursor: pointer;
+  }
+  
+  .directional_nav {
+    height: 340px;
+    margin: 0 auto;
+    max-width: 940px;
+    position: relative;
+    top: -340px;
+  }
+  
+  .previous_btn {
+    bottom: 0;
+    left: 100px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+  }
+  
+  .next_btn {
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    right: 100px;
+    top: 0;
+  }
+  
+  .previous_btn, .next_btn {
+    cursor: pointer;
+    height: 65px;
+    opacity: 0.5;
+    -webkit-transition: opacity 0.4s ease-in-out;
+    -moz-transition: opacity 0.4s ease-in-out;
+    -ms-transition: opacity 0.4s ease-in-out;
+    -o-transition: opacity 0.4s ease-in-out;
+    transition: opacity 0.4s ease-in-out;
+    width: 65px;
+  }
+  
+  .previous_btn:hover, .next_btn:hover {
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .previous_btn {
+      left: 50px;
+    }
+    .next_btn {
+      right: 50px;
+    }
+  }
+  img{
+    width: 100%;
+    height: 100%;
+  }
+  .in-2{
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black; 
+      width: 100%; 
+      height: 50%; 
+      clip-path: polygon(45% 0%, 100% 0%, 100% 100%, 0% 100%);
+  }
+  .in-2-text{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    z-index: 100;
+    color: rgb(0, 0, 0);
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Jura);
+section{
+    height:30%;
+    width:100%;
+    font-family: 'Jura';
+  }
+  .content{
+    position:relative;
+    left:50%;
+    top:50%;
+    transform:translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+  }
+  .logo{
+    position:relative;
+    left:50%;
+    margin-top:10px;
+    margin-left:-121px;
+    background:transparent;
+  }
+  .desc{
+    font-size:1em;
+    color:#000;
+    text-align:center;
+    text-transform:uppercase;
+    opacity:0;
+    letter-spacing:-5px;
+    animation: letterSpacing 1.5s ease-in-out 3.5s;
+    -webkit-animation: letterSpacing 1.5s ease-in-out 3.5s;
+    animation-fill-mode:forwards;
+    -webkit-animation-fill-mode:forwards;
+  }
+  @keyframes letterSpacing{
+    0%{
+      letter-spacing:-5px;
+      opacity:0;
+    }
+    100%{
+      letter-spacing:1px;
+      opacity:1;
+    }
+  }
+  @-webkit-keyframes letterSpacing{
+    0%{
+      letter-spacing:-5px;
+      opacity:0;
+    }
+    100%{
+      letter-spacing:1px;
+      opacity:1;
+    }
+  }

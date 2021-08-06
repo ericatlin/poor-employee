@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>藍翠</title>
+    <link rel="stylesheet" href="../組網/組網.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+    <script>
+        $('body').scrollspy({ target:'#mail-nav'});
+        $('#main-nav a').on('click',function(event){
+    if(this.hash !==""){
+    
+        event.preventDefault();
+        
+        const hash = this.hash;
+        $('html,body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function(){
+            window.location.hash = hash;
+        })
+    }
+})
+    </script>
+</head>
+<body data-spy="scroll" data-target="#main-nav" id="home">
+    <nav id="main-nav" class="navbar">
+        <div class="container">
+            <a href="" class="nav-brand">藍翠</a>
+            <div class="r-b">
+                <ul class="navbar-nav">
+                    <li>
+                        <a href="#section1" style="color: rgb(175, 228, 230);">回上方</a>
+                    </li>
+                    <li>
+                        <a href="#section2" style="color: rgb(175, 228, 230);">產品</a>
+                    </li>
+                    <li>
+                        <a href="#section3" style="color: rgb(175, 228, 230);">介紹</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="whale"></div>
+    <div class="text-block"><h1>It"s everyone"s duty to love and protect the environment.</h1></div>
+    <div class="in-w">
+        <div id="section1" style="height: 1000px; width: 100%;background-image: url(https://images.pexels.com/photos/5061256/pexels-photo-5061256.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);"></div>
+        <div style="width: 100%; height: 50px;"id="section2"></div>
+        <div class="item-b">
+            <div class="item-sh"><p>1</p></div>
+            <div class="item-sh"><p>1</p></div>
+            <div class="item-sh"><p>1</p></div>
+            <div class="item-sh"><p>1</p></div>
+        </div>
+        <div class="autoplay">
+            <div><img src="https://images.pexels.com/photos/5081501/pexels-photo-5081501.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+            <div><img src="https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+            <div><img src="https://images.pexels.com/photos/2131801/pexels-photo-2131801.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+            <div><img src="https://images.pexels.com/photos/7082102/pexels-photo-7082102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+        </div>
+        <div class="item-b2" id="section3">
+            <div class="item-sh2">
+                <p class="tx">理念</p>
+                <div class="it-sh2-img"><img src="https://images.pexels.com/photos/4559775/pexels-photo-4559775.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></div>
+                <div class="shadow"></div>
+            </div>
+            <div class="item-sh2">
+                <p class="tx">環境</p>
+                <div class="it-sh2-img"><img src="https://www.shishifeihong.com/wp-content/uploads/2015/04/Fei-Hong-Sustainability-mobile.jpg" alt=""></div>
+                <div class="shadow"></div>
+            </div>
+            <div class="item-sh2">
+                <p class="tx">設計</p>
+                <div class="it-sh2-img"><img src="https://images.pexels.com/photos/56759/pexels-photo-56759.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+                <div class="shadow"></div>
+            </div>
+            <div class="item-sh2">
+                <p class="tx">人與人的連結</p>
+                <div class="it-sh2-img"><img src="https://images.pexels.com/photos/3182812/pexels-photo-3182812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt=""></div>
+                <div class="shadow"></div>
+            </div>
+        </div>
+        <div class="btn-b"><div><p style="font-size:xx-large;color: cornsilk;">made by jimmy</p></div></div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script src="組網.js"></script>
+</body>
+</html>
