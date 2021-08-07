@@ -70,7 +70,7 @@ ul.flip {
     float: left;
     margin: 10px;
     padding: 0;
-    width: 100px;
+    width: 60px;
     height: 60px;
     font-size: 80px;
     font-weight: bold;
@@ -277,6 +277,7 @@ body.play ul section.active .down .shadow {
     height: 80%;
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     
 }
 .slk{
@@ -409,6 +410,7 @@ body.play ul section.active .down .shadow {
     height: 100%;
   }
   .in-2{
+    margin-top: 50px;
       position: relative;
       display: flex;
       align-items: center;
@@ -420,7 +422,7 @@ body.play ul section.active .down .shadow {
   }
   .in-2-text{
     position: absolute;
-    top: 5%;
+    bottom: 5%;
     right: 5%;
     z-index: 100;
     color: rgb(0, 0, 0);
