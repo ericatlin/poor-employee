@@ -1,0 +1,780 @@
+/*
+** 行銷企劃
+*/
+
+/* 共通 */
+.mkt_content_wrap{
+	position: absolute;
+	left: 5%;
+	top: 5%;
+	width: 90%;
+	display: inline-block;
+	background: rgba(255,255,255,0.97);	
+	opacity: 0;
+	transition: all 1s;
+	font-size: medium;
+	text-align: center;
+	font-family: '微軟正黑體';
+	line-height: 1.8em;
+	padding: 0 1em 30px 1em;
+	z-index: 3;
+}
+
+.mkt_content_close_button{
+	display: block;
+	margin: 0 auto;
+	font-size: 2em;
+	margin-top: 0.5em;
+	cursor: pointer;
+	color: #ADADAD;
+}
+
+.mkt_content_close_button:hover{
+	color: #686868;
+}
+
+.mkt_content_title1{
+	font-size: 2em;
+	line-height: 2.2em;
+	font-weight: bold;
+}
+
+.mkt_content_title2{
+	font-size: 1.5em;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+
+.marketing_intro_wrap{
+	transition: all 1s;
+}
+
+/* key 行銷成功的鑰匙 */
+#mkt_section1{
+	background: url(../uploads/1.jpg) center center no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+
+#mkt_section1 .mkt_title_wrap{
+	position: absolute;
+	top: 120px;
+	left: 19.7vw;
+	width: 10px;
+	height: 50px;
+	transition: all 1s;
+	background: yellow;
+	z-index: 2;
+}
+
+#mkt_section1 .mkt_title1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	font-size: 8em;
+	transition: all 1s;
+}
+	
+#mkt_section1 .mkt_title2{
+	position: absolute;
+	top: 30px;
+	left: 210px;
+	opacity: 0.8;
+	font-size: 2.2em;
+	transition: all 1s;
+	width: 500px;
+}
+
+#mkt_section1 .mkt_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.4;
+	background: #FFF;
+	transition: all 1s;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+   #mkt_section1 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+   #mkt_section1 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: red;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    #mkt_section1 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: orange;
+	}
+	
+	#mkt_section1 .mkt_title1{
+		font-size: 4em;		
+	}
+
+	#mkt_section1 .mkt_title2{
+		font-size: 1em;
+		top: 40px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 575.99px) {
+    #mkt_section1 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: pink;
+	}
+	
+	#mkt_section1 .mkt_title1{
+		font-size: 4em;
+	}
+
+	#mkt_section1 .mkt_title2{
+		font-size: 1.2em;
+		left: 0;
+		top: 40px;
+	}
+}
+
+
+/* ADVERTISING 廣告設計、印刷與執行 */
+#mkt_section2{
+	background: url(../uploads/6.jpg) center center no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	cursor: pointer;
+}
+
+#mkt_section2 .mkt_title_wrap{
+	position: absolute;
+	top: 140px;
+	left: 19.7vw;
+	width: 10px;
+	height: 50px;
+	transition: all 1s;
+	background: yellow;
+	color: #CFCFCF;
+	z-index: 2;
+}
+
+#mkt_section2 .mkt_title1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	font-size: 8em;
+	transition: all 1s;
+}
+	
+#mkt_section2 .mkt_title2{
+	position: absolute;
+	top: 75px;
+	left: 160px;
+	opacity: 0.8;
+	font-size: 2.2em;
+	transition: all 1s;
+	width: 500px;
+}
+
+
+#mkt_section2 .mkt_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.75;
+	background: #000;
+	transition: all 1s;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+   #mkt_section2 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+   #mkt_section2 .mkt_title_wrap{
+		position: absolute;
+		left: 6vw;
+	   background: red;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    #mkt_section2 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: orange;
+	}
+	
+	#mkt_section2 .mkt_title1{
+		font-size: 3em;		
+	}
+
+	#mkt_section2 .mkt_title2{
+		font-size: 1em;
+		top: 40px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 575.99px) {
+    #mkt_section2 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+		font-size: 0.8em;
+	   background: pink;
+	}
+	
+	#mkt_section2 .mkt_title1{
+		font-size: 4em;
+	}
+
+	#mkt_section2 .mkt_title2{
+		font-size: 1.5em;
+		left: 0;
+		top: 40px;
+	}
+}
+
+/* SEO搜尋引擎優化 */
+#mkt_section3{
+	background: url(../uploads/1.jpg) center center no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+
+#mkt_section3 .mkt_title_wrap{
+	position: absolute;
+	top: 120px;
+	left: 19.7vw;
+	width: 10px;
+	height: 50px;
+	transition: all 1s;
+	background: yellow;
+	z-index: 2;
+}
+
+#mkt_section3 .mkt_title1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	font-size: 8em;
+	transition: all 1s;
+}
+	
+#mkt_section3 .mkt_title2{
+	position: absolute;
+	top: 30px;
+	left: 230px;
+	opacity: 0.8;
+	font-size: 2.2em;
+	transition: all 1s;
+	width: 500px;
+}
+
+#mkt_section3 .mkt_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.4;
+	background: #FFF;
+	transition: all 1s;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+   #mkt_section3 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+   #mkt_section3 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: red;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    #mkt_section3 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: orange;
+	}
+	
+	#mkt_section3 .mkt_title1{
+		font-size: 4em;		
+	}
+
+	#mkt_section3 .mkt_title2{
+		font-size: 1em;
+		top: 40px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 575.99px) {
+    #mkt_section3 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: pink;
+	}
+	
+	#mkt_section3 .mkt_title1{
+		font-size: 4em;
+	}
+
+	#mkt_section3 .mkt_title2{
+		font-size: 1.2em;
+		left: 0;
+		top: 40px;
+	}
+}
+
+
+/* AdWords 關鍵字 */
+#mkt_section4{
+	background: url(../uploads/6.jpg) center center no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	cursor: pointer;
+}
+
+#mkt_section4 .mkt_title_wrap{
+	position: absolute;
+	top: 140px;
+	left: 19.7vw;
+	width: 10px;
+	height: 50px;
+	transition: all 1s;
+	background: yellow;
+	color: #CFCFCF;
+	z-index: 2;
+}
+
+#mkt_section4 .mkt_title1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	font-size: 8em;
+	transition: all 1s;
+}
+	
+#mkt_section4 .mkt_title2{
+	position: absolute;
+	top: 75px;
+	left: 335px;
+	opacity: 0.8;
+	font-size: 2.2em;
+	transition: all 1s;
+	width: 500px;
+}
+
+
+#mkt_section4 .mkt_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.75;
+	background: #000;
+	transition: all 1s;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+   #mkt_section4 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+   #mkt_section4 .mkt_title_wrap{
+		position: absolute;
+		left: 6vw;
+	   background: red;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    #mkt_section4 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: orange;
+	}
+	
+	#mkt_section4 .mkt_title1{
+		font-size: 3em;		
+	}
+
+	#mkt_section4 .mkt_title2{
+		font-size: 1em;
+		top: 40px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 575.99px) {
+    #mkt_section4 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+		font-size: 0.8em;
+	   background: pink;
+	}
+	
+	#mkt_section4 .mkt_title1{
+		font-size: 4em;
+	}
+
+	#mkt_section4 .mkt_title2{
+		font-size: 1.5em;
+		left: 0;
+		top: 40px;
+	}
+}
+
+/* 人氣部落客代言 */
+#mkt_section5{
+	background: url(../uploads/1.jpg) center center no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+
+#mkt_section5 .mkt_title_wrap{
+	position: absolute;
+	top: 120px;
+	left: 19.7vw;
+	width: 10px;
+	height: 50px;
+	transition: all 1s;
+	background: yellow;
+	z-index: 2;
+}
+
+#mkt_section5 .mkt_title1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	font-size: 8em;
+	transition: all 1s;
+}
+	
+#mkt_section5 .mkt_title2{
+	position: absolute;
+	top: 100px;
+	left: 230px;
+	opacity: 0.8;
+	font-size: 2.2em;
+	transition: all 1s;
+	width: 500px;
+}
+
+#mkt_section5 .mkt_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.4;
+	background: #FFF;
+	transition: all 1s;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+   #mkt_section5 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+   #mkt_section5 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: red;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    #mkt_section5 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: orange;
+	}
+	
+	#mkt_section5 .mkt_title1{
+		font-size: 4em;		
+	}
+
+	#mkt_section5 .mkt_title2{
+		font-size: 1em;
+		top: 50px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 575.99px) {
+    #mkt_section5 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: pink;
+	}
+	
+	#mkt_section5 .mkt_title1{
+		font-size: 4em;
+	}
+
+	#mkt_section5 .mkt_title2{
+		font-size: 1.2em;
+		left: 0;
+		top: 50px;
+	}
+}
+
+
+/* 故事行銷 */
+#mkt_section6{
+	background: url(../uploads/6.jpg) center center no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+	width: 100%;
+	clear: both;
+	position: relative;
+	cursor: pointer;
+}
+
+#mkt_section6 .mkt_title_wrap{
+	position: absolute;
+	top: 140px;
+	left: 19.7vw;
+	width: 10px;
+	height: 50px;
+	transition: all 1s;
+	background: yellow;
+	color: #CFCFCF;
+	z-index: 2;
+}
+
+#mkt_section6 .mkt_title1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.8;
+	font-size: 8em;
+	transition: all 1s;
+}
+	
+#mkt_section6 .mkt_title2{
+	position: absolute;
+	top: 35px;
+	left: 360px;
+	opacity: 0.8;
+	font-size: 2.2em;
+	transition: all 1s;
+	width: 500px;
+}
+
+
+#mkt_section6 .mkt_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.75;
+	background: #000;
+	transition: all 1s;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+   #mkt_section6 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+   #mkt_section6 .mkt_title_wrap{
+		position: absolute;
+		left: 6vw;
+	   background: red;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    #mkt_section6 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: orange;
+	}
+	
+	#mkt_section6 .mkt_title1{
+		font-size: 3em;		
+	}
+
+	#mkt_section6 .mkt_title2{
+		font-size: 1em;
+		top: 35px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 575.99px) {
+    #mkt_section6 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+		font-size: 0.8em;
+	   background: pink;
+	}
+	
+	#mkt_section6 .mkt_title1{
+		font-size: 4em;
+	}
+
+	#mkt_section6 .mkt_title2{
+		font-size: 1.5em;
+		left: 0;
+		top: 40px;
+	}
+}
+
+
+/* 行銷管理工具 */
+#mkt_section7{
+	background: url(../uploads/1.jpg) center center no-repeat;
+	background-size: 100% auto;
+	height: 350px;
+	width: 100%;
+	clear: both;
+	position: relative;
+}
+
+#mkt_section7 .mkt_title_wrap{
+	position: absolute;
+	top: 120px;
+	left: 19.7vw;
+	width: 10px;
+	height: 50px;
+	transition: all 1s;
+	background: yellow;
+	z-index: 2;
+}
+
+#mkt_section7 .mkt_title1{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.7;
+	font-size: 8em;
+	transition: all 1s;
+}
+	
+#mkt_section7 .mkt_title2{
+	position: absolute;
+	top: 30px;
+	left: 380px;
+	opacity: 0.8;
+	font-size: 2.2em;
+	transition: all 1s;
+	width: 500px;
+}
+
+#mkt_section7 .mkt_mask{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+	opacity: 0.4;
+	background: #FFF;
+	transition: all 1s;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199.99px) {
+   #mkt_section7 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: blue;
+	}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991.99px) {
+   #mkt_section7 .mkt_title_wrap{
+		position: absolute;
+		left: 10.7vw;
+	   background: red;
+	}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.99px) {
+    #mkt_section7 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: orange;
+	}
+	
+	#mkt_section7 .mkt_title1{
+		font-size: 4em;		
+	}
+
+	#mkt_section7 .mkt_title2{
+		font-size: 1em;
+		top: 40px;
+		left: 0;
+	}
+}
+
+@media screen and (max-width: 575.99px) {
+    #mkt_section7 .mkt_title_wrap{
+		position: absolute;
+		left: 15px;
+	   background: pink;
+	}
+	
+	#mkt_section7 .mkt_title1{
+		font-size: 4em;
+	}
+
+	#mkt_section7 .mkt_title2{
+		font-size: 1.2em;
+		left: 0;
+		top: 40px;
+	}
+}

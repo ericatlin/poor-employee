@@ -1,0 +1,639 @@
+body{
+    
+    margin: auto;
+    margin: 0%;
+    background-color: rgb(255, 250, 187);
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.heading{
+    margin: auto;
+    margin: 0%;
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    padding: 1%;
+    align-items: center;
+}
+.img{
+    margin: auto;
+    margin: 0%;
+    width: 100%;
+}
+.img1{
+    
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    margin-left: 10%;
+    margin-top: 5%;
+    padding: 1%;
+    margin-bottom: 5%;
+    
+}
+
+.bb{
+  margin: auto;
+  margin-top: 250px;
+}
+.image3{
+  margin: auto;
+  width: 80%;
+}
+
+.image{
+    width: 100%;
+}
+.Word{
+    margin-left: 1%;
+    font-size: 15px;
+    margin-top: 10%;
+    padding: 1%;
+    margin-bottom: 5%;
+    margin-right: 10%;
+}
+.fb{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-left: 10%;
+  justify-content: space-between;
+  overflow: hidden;
+  
+}
+.ig{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  margin-left: 11px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.youtube{
+  width: 35px;
+ height: 35px;
+  border-radius: 100%;
+  margin-left: 10px;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.fb:hover{
+  filter: contrast(30%);
+    transition-duration:1s;
+    color: black
+}
+.ig:hover{
+  filter: contrast(30%);
+    transition-duration:1s;
+    color: black
+}
+.youtube:hover{
+  filter: contrast(30%);
+    transition-duration:1s;
+    color: black
+}
+.approve{
+  display: flex;
+  margin-left: 70%;
+  margin-bottom: 2%;
+  flex-wrap: wrap;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*標題文字顏色*/
+.gradient-text {
+   
+    background-image: linear-gradient(
+          130deg,
+          #130566 16.666%, 
+          #120078 16.666%, 
+          #9D0191 33.333%, 
+          #9D0191 33.333%, 
+          #FD3A69 50%, 
+          #FD3A69 50%, 
+          #FECD1A 66.666%, 
+          #FECD1A 66.666%, 
+          #eef091 83.333%, 
+          #ebf1a1 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .gradient-text:hover{
+      animation: rainbow-text-simple-animation 0.1s ease-in forwards;
+  }
+  
+  @keyframes rainbow-text-simple-animation-rev {
+      0% {
+          background-size: 650%;
+      }
+      40% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 100%;
+      }
+  }
+  
+  @keyframes rainbow-text-simple-animation {
+      0% {
+          background-size: 650%;
+      }
+      80% {
+          background-size: 650%;
+      }
+      100% {
+          background-size: 650%;
+      }
+  }
+
+  
+  h1 {
+    margin: 0%;
+    font-family: 標楷體;
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 3em;
+    cursor: pointer;
+  }
+  
+  /* https://fossheim.io/writing/posts/css-text-gradient/ */  
+
+
+
+  
+
+
+
+
+
+
+/*產品圖片放大*/
+.item {
+	display: inline-table;
+	width: 31.5%;
+	background: rgb(255, 255, 255);
+	margin: 2% 2% 0 0%;
+	border-radius: 2px;
+	overflow: hidden;
+	position: relative;
+	box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em,
+		rgb(0 0 0 / 25%) 0px 0.125em 0.5em,
+		rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
+}
+
+.item:last-of-type {
+	margin-right: 0;
+}
+
+
+
+.item:first-of-type h3 {
+	background: #000065;
+}
+
+.item:last-of-type h3 {
+	background: #000000;
+}
+
+
+
+figure {
+	margin: 0;
+	overflow: hidden;
+}
+
+figure img {
+	width: 100%;
+	transform: scale(1) rotate(0deg);
+	transition: transform 0.5s ease 0s;
+	animation: zoom-image 3s ease 0s 1;
+}
+
+figure:hover img {
+	transform: scale(2) rotate(5deg);
+	transition: transform 0.5s ease 0s;
+}
+
+.item + .item figure img {
+	animation-delay: 0.65s;
+}
+
+.item + .item + .item figure img {
+	animation-delay: 1.3s;
+}
+
+
+
+
+
+
+
+@keyframes zoom-image {
+	0% {
+		transform: scale(1) rotate(0deg);
+		transition: transform 0.5s ease 0s;
+	}
+	60% {
+		transform: scale(2) rotate(5deg);
+		transition: transform 0.5s ease 0s;
+	}
+	100% {
+		transform: scale(1) rotate(0deg);
+		transition: transform 0.5s ease 0s;
+	}
+}
+
+@media only screen and (max-width: 1280px) {
+	header {
+		background: linear-gradient(to right, #ff8b1c, #ff8b1c 15%, #121212 15%);
+	}
+}
+
+@media only screen and (max-width: 980px) {
+	header {
+		background: linear-gradient(to right, #ff8b1c, #ff8b1c 25%, #121212 25%);
+	}
+	.item {
+		width: 48.5%;
+	}
+	.item + .item {
+		margin-right: 0;
+	}
+	figcaption {
+		margin-top: -3.5vmin;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	.item {
+		width: 99.5%;
+	}
+	.item {
+		margin-right: 0;
+	}
+	button {
+		height: 2.75em;
+	}
+	figcaption {
+		margin-top: -5vmin;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	select {
+		width: calc(100% - 2.5vmin) !important;
+		float: right;
+		margin-right: 1vmin;
+	}
+	label {
+		float: left;
+	}
+	.price,
+	.special {
+		width: calc(100% - 4vmin);
+	}
+	button {
+		width: calc(100% - 2vmin);
+		height: 2.5em;
+	}
+	button:after {
+		line-height: 1.15em;
+	}
+}
+
+
+
+
+
+* {
+  box-sizing: border-box;
+ 
+   
+}
+
+  :root {
+    --purple: hsl(240, 80%, 89%);
+    --pink: hsl(0, 59%, 94%);
+    --light-bg: hsl(204, 37%, 92%);
+    --light-gray-bg: hsl(0, 0%, 94%);
+    --white: hsl(0, 0%, 100%);
+    --dark: hsl(0, 0%, 7%);
+    --text-gray: hsl(0, 0%, 30%);
+  }
+  
+
+  
+  h3 {
+    font-size: 1.3em;
+    font-weight: 700;
+  }
+  
+  p {
+    font-size: 0.8em;
+    line-height: 1.5;
+    font-weight: 300;
+    color: var(--text-gray);
+  }
+  
+  .description {
+    white-space: wrap;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .wrap {
+    display: flex;
+   
+    align-items: stretch;
+    width: 90%;
+    margin: 5%;
+    gap: 24px;
+    padding: 24px;
+    flex-wrap: wrap;
+    
+  }
+  
+  
+  .box {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+    position: relative;
+    padding: 24px;
+    background:white;
+  }
+  
+  .box-top {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 12px;
+    
+  }
+  
+  .box-image {
+   
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 20%;
+  }
+  
+  .title-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .box-title {
+    border-left: 3px solid var(--purple);
+    padding-left: 12px;
+  }
+  
+  .user-follow-info {
+    color: hsl(0, 0%, 60%);
+  }
+  
+  .button {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    padding: 13px;
+    color: #000;
+    background: transparent;
+    box-shadow: 0px 0px 0px 1px black inset;
+    transition: background 0.4s ease;
+  }
+  
+  .button:hover {
+    background: var(--purple);
+  }
+  
+  .fill-one {
+    background: var(--light-bg);
+  }
+  
+  .fill-two {
+    background: var(--pink);
+  }
+  
+  /* RESPONSIVE QUERIES */
+  
+  @media (min-width: 320px) {
+    .title-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 460px) {
+    .title-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 640px) {
+    .box {
+      flex-basis: calc(50% - 12px);
+    }
+    .title-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 840px) {
+    .title-flex {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .box {
+      flex-basis: calc(33.3% - 16px);
+    }
+    .title-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: start;
+    }
+    .user-follow-info {
+      margin-top: 6px;
+    }
+  }
+  
+  @media (min-width: 1100px) {
+    .box {
+      flex-basis: calc(25% - 18px);
+    }
+  }
+  
+
+
+
+
+
+
+
+/*浮動字*/
+ 
+  /* Explanation in JS tab */
+
+/* Cool font from Google Fonts! */
+@import url('https://fonts.googleapis.com/css?family=Raleway:900&display=swap');
+
+
+#container {
+	/* Center the text in the viewport. */
+	position: absolute;
+
+	width: 100%;
+	height: 10%;
+	top: 30%;
+	bottom: 0;
+	
+	/* This filter is a lot of the magic, try commenting it out to see how the morphing works! */
+	filter: url(#threshold) blur(0.6px);
+}
+
+/* Your average text styling */
+#text1, #text2 {
+	position: absolute;
+	width: 100%;
+	display: inline-block;
+	
+	font-family: 'Raleway', sans-serif;
+	font-size: 80pt;
+	
+	text-align: center;
+	
+	user-select: none;
+}
+
+
+
+
+
+
+/*有害物質*/
+
+
+.section-heading {
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-size: 64px;
+  color: #10996d;
+  margin: 0 0 70px;
+}
+
+.container {
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+  margin: auto;
+  
+}
+
+.profile {
+  position: relative;
+  transition: all 0.3s;
+}
+
+.profile:hover {
+  transform: translateY(25px);
+}
+
+.profile img {
+  
+  max-width: 100%;
+  border-radius: 50%;
+  border: 5px solid #f7f7f7;
+  filter: drop-shadow(-20px 0 10px rgba(0, 0, 0, 0.1));
+  cursor: pointer;
+}
+
+.profile:not(:first-child) img {
+  margin-left: -20px;
+}
+
+.profile .name {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  background-color: #1268a1;
+  color: #fff;
+  font-family: "Bebas Neue", cursive;
+  padding: 15px 0;
+  border-radius: 10px;
+  bottom: -150px;
+  left: 50%;
+  white-space:nowrap;
+  transform: translate(-50%, -50px);
+  letter-spacing: 1px;
+  font-size: 100%;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.profile .name::before {
+  flex-wrap: wrap;
+  content: "";
+  position: absolute;
+  width: 15px; height: 15px;
+  background-color: #1268a1;
+  top: 0; left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.profile img:hover + .name {
+  opacity: 1;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 20px rgba(86, 86, 198, 0.3);
+}
+
