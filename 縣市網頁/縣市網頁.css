@@ -1,0 +1,172 @@
+html{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body{
+    overflow: hidden;
+    width: auto;
+    margin: 0;
+}
+.bg{
+    max-width: 100%;
+    z-index: -1;
+    position: fixed;
+}
+.img-bg{
+    height: 100%;
+}
+.ht{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.gm{
+    width: 90%;
+    display: flex;
+    height: auto;
+    position: absolute;
+    top: 7vh;
+    left: 7vw;
+    flex-wrap: wrap;
+}
+p{
+    font-size: 2em;
+    font-family:cursive
+}
+@media screen and (min-width: 1200px )
+{
+    .gm-bk{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        min-width:80%;
+        height: 80vh;
+    }
+    .tower1{
+        width: 100%;
+        height:17%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .t1-b{
+        width: 10%;
+        height: 100%;
+        border-radius: 15px 15px 0px 0px;
+        background-color: rgb(254, 255, 255);
+        border: black 2px solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .t1-b-l{
+        position: absolute;
+        top: 25px;
+        right: 20px;
+        width: 30px;
+        height: 30px;
+        border-radius: 100%;
+        background-color: rgb(223, 248, 0);
+        border: solid black 2px;
+    }
+    .t2-b{
+        width: 25%;
+        height: 100%;
+        border-radius: 15px;
+        background-color: rgb(254, 255, 255);
+        border: black 2px solid;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .t3-b{
+        width: 20%;
+        height: 100%;
+        background-color: rgb(88, 91, 255);
+        clip-path: polygon(15% 0%, 85% 0%, 94% 100%, 6% 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .t4-b{
+        width: 25%;
+        height: 100%;
+        clip-path: polygon(15% 0%, 85% 0%, 94% 100%, 6% 100%);
+        background-color: rgb(255, 229, 83);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .t5-b{
+        width: 31.5%;
+        height: 100%;
+        clip-path: polygon(15% 0%, 85% 0%, 94% 100%, 6% 100%);
+        background-color: rgb(255, 126, 71);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .t6-b{
+        width: 35%;
+        height: 100%;
+        border-radius: 15px 15px 0 0 ;
+        background-color: rgb(154, 161, 161);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid black 2px;
+    }
+}
+.t2-b:hover {
+    animation-name: t1-ba;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.t3-b:hover {
+    animation-name: t2-ba;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.t4-b:hover {
+    animation-name: t3-ba;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.t5-b:hover {
+    animation-name: t4-ba;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+.t6-b:hover {
+    animation-name: t5-ba;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+}
+@keyframes t1-ba{
+    100%{width: 30%;height: 105%;z-index: 10;}  
+}
+@keyframes t2-ba{
+    100%{width: 25%;height: 105%;z-index: 10;}  
+}
+@keyframes t3-ba{
+    100%{width: 30%;height: 105%;z-index: 10;}  
+}
+@keyframes t4-ba{
+    100%{width: 35%;height: 105%;z-index: 10;}  
+}
+@keyframes t5-ba{
+    100%{width: 40%;height: 105%;z-index: 10;}  
+}
+
+a{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+}
